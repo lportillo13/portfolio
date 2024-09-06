@@ -26,7 +26,7 @@ const Header: FC = () => {
         <div className="text-2xl font-bold">
           <a href="#home"><img className={`transition-all duration-300 ${
               isScrolled ? "w-12" : "w-20"
-            }`} src='/logi.png'></img></a>
+            }`} src='/logi.png' alt='Header Logo'></img></a>
         </div>
         <ul className="flex space-x-4">
           <li>
