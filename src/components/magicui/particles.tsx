@@ -7,7 +7,8 @@ interface MousePosition {
   y: number;
 }
 
-function MousePosition(): MousePosition {
+// Create the useMousePosition hook
+function useMousePosition(): MousePosition {
   const [mousePosition, setMousePosition] = useState<MousePosition>({
     x: 0,
     y: 0,
@@ -71,11 +72,12 @@ const Particles: React.FC<ParticlesProps> = ({
   const canvasContainerRef = useRef<HTMLDivElement>(null);
   const context = useRef<CanvasRenderingContext2D | null>(null);
   const circles = useRef<Circle[]>([]);
-  const mousePosition = MousePosition();
+  const mousePosition = useMousePosition(); // Use the hook here
   const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
   const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     if (canvasRef.current) {
       context.current = canvasRef.current.getContext("2d");
@@ -116,6 +118,7 @@ const Particles: React.FC<ParticlesProps> = ({
     }
   };
 
+// eslint-enable react-hooks/exhaustive-deps
   type Circle = {
     x: number;
     y: number;
