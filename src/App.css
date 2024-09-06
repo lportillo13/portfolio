@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,700|Oswald');
+
+h1,
+h2,
+.numbers-track{
+  font-family: 'Oswald', sans-serif;
+}
+
+p,
+.suse-regular,
+.share-regular  {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logos-carousel .svg-inline--fa {
+  font-size: 7rem;
+}
+
+.gradient-border {
+  position: relative;
+  display: inline-block;
+  background-color: #1a1a1a;
+  border-radius: 10px; 
+  margin-right: 10px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -2px; 
+  left: -2px; 
+  right: -2px; 
+  bottom: -2px; 
+  background: linear-gradient(150deg, #39ff145c 10.21%, #88DFAB 84.57%);
+  border-radius: inherit; 
+  pointer-events: none;
+}
+
+.portfolio_tags{
+  position: relative;
+  z-index: 5;
+  border-radius: 7px;
+  background: #040910;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
