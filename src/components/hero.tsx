@@ -15,7 +15,7 @@ const Home: FC = () => {
   return (
     
     <section id="home" className="h-screen flex items-center justify-center fade-in">
-        <div className="relative flex w-full flex-col h-full md:h-screen p-2 md:p-0 items-center justify-end overflow-hidden bg-background md:shadow-xl">
+        <div className="relative flex w-full flex-col h-full md:h-screen p-10 md:p-0 items-center justify-end overflow-hidden bg-background md:shadow-xl">
             <Particles
                 className="absolute inset-0"
                 quantity={500}
