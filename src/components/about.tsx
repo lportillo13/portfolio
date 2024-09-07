@@ -8,25 +8,25 @@ import ShineBorder from "./magicui/shine-border";
 
 const About: FC = () => {
   return (
-    <section id="about" className="h-screen container flex items-center my-16 text-white mt-[5rem] mb-[15rem]">
-      <div className="flex items-center">
-        <div className="flex-1 basis-1/2 p-4 m-2">
+    <section id="about" className="container md:flex md:h-screen items-center my-16 text-white mt-[5rem] mb-[15rem]">
+      <div className="md:flex items-center block">
+        <div className="flex-1 basis-1/2 p-4 md:m-2">
           <BoxReveal boxColor={"#39ff14"} duration={0.5}>
-            <h2 className="text-[3.5rem] font-semibold">
+            <h2 className="text-center text-[3.5rem] font-semibold">
               About Me<span className="text-[#39ff14]">.</span>
             </h2>
           </BoxReveal>
     
           <BoxReveal boxColor={"#39ff14"} duration={0.5}>
-            <div className="mt-[1.5rem]">
+            <div className="text-center mt-[1.5rem]">
               <p>I'm a web developer based in Florida with a strong focus on front-end technologies. For the past few years, I’ve specialized in creating exceptional user and developer experiences using WordPress, React.js, TypeScript, Bootstrap, and Tailwind CSS. I particularly enjoy building WordPress themes and plugins from scratch, crafting custom solutions that perfectly fit the needs of my projects.</p>
               <p className='mt-4'>My interest in technology and food has been a lifelong passion. As a teenager, I was deeply engrossed in computers, always exploring and experimenting. That same enthusiasm continues to drive me today.</p>
             </div>
           </BoxReveal>
 
-          <div className='flex'>          
+          <div className='md:flex'>          
             <ShineBorder
-            className="relative flex h-full w-full mt-16 flex-col items-center p-0 me-5 justify-center overflow-hidden bg-background md:shadow-xl "
+            className="relative flex h-full w-full mt-8 md:mt-16 flex-col items-center p-0 me-5 justify-center overflow-hidden bg-background md:shadow-xl "
             color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
             >  
               <p className="whitespace-pre-wrap text-4xl font-medium tracking-tighter text-white text-center py-6 numbers-track">
@@ -35,7 +35,7 @@ const About: FC = () => {
               </p>  
             </ShineBorder>     
             <ShineBorder
-            className="relative flex h-full w-full mt-16 flex-col items-center p-0 me-5 justify-center overflow-hidden bg-background md:shadow-xl "
+            className="relative flex h-full w-full mt-8 md:mt-16 flex-col items-center p-0 me-5 justify-center overflow-hidden bg-background md:shadow-xl "
             color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
             >  
               <p className="whitespace-pre-wrap text-4xl font-medium tracking-tighter text-white text-center py-6 numbers-track">
@@ -44,7 +44,7 @@ const About: FC = () => {
               </p>  
             </ShineBorder>    
             <ShineBorder
-            className="relative flex h-full w-full mt-16 flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
+            className="relative flex h-full w-full mt-8 md:mt-16 flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
             color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
             >  
               <p className="whitespace-pre-wrap text-4xl font-medium tracking-tighter text-white text-center py-6 numbers-track">

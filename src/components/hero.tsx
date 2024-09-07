@@ -1,3 +1,5 @@
+// src/components/Home.tsx
+
 import React, { FC } from 'react';
 import { useEffect, useState } from "react";
 import Particles from "./magicui/particles";
@@ -11,8 +13,9 @@ const Home: FC = () => {
     }, []);
 
   return (
+    
     <section id="home" className="h-screen flex items-center justify-center fade-in">
-        <div className="relative flex w-full flex-col h-screen items-center justify-end overflow-hidden bg-background md:shadow-xl">
+        <div className="relative flex w-full flex-col h-full md:h-screen p-2 md:p-0 items-center justify-end overflow-hidden bg-background md:shadow-xl">
             <Particles
                 className="absolute inset-0"
                 quantity={500}
@@ -20,22 +23,22 @@ const Home: FC = () => {
                 color={color}
                 refresh
             />
-            <p className='suse-regular text-white text-center pb-5 uppercase w-full sm:w-4/6 md:w-2/6'>Welcome to my site</p>
-            <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-br dark:from-white from-white from-30% dark:to-white/40 to-black/40 bg-clip-text text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-            I'm Leonardo Portillo, <br />a Front-End Developer.
+            <p className='suse-regular text-white text-center pb-5 uppercase md:w-2/6'>Welcome to my site</p>
+            <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-br dark:from-white from-white from-30% dark:to-white/40 to-black/40 bg-clip-text text-center text-4xl md:text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+            I'm Leonardo Portillo, <br></br>a Front-End Developer.
             </h1>
-            <p className='suse-regular text-white text-center pt-5 w-full sm:w-4/6 md:w-2/6'>I'm passionate about coding that pushes the limits—building high-performance websites, automating API integrations, creating custom dev tools, and designing stunning user experiences that make you say Wow!.</p>
+            <p className='suse-regular text-white text-center pt-5 md:w-2/6'>I'm passionate about coding that pushes the limits—building high-performance websites, automating API integrations, creating custom dev tools, and designing stunning user experiences that make you say Wow!.</p>
             
             <div className="share-regular z-10 flex min-h-[8rem] items-center justify-center">
                 <ShimmerButton className="shadow-2xl">
-                    <span className="whitespace-pre-wrap text-center text-xs sm:text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                         Download CV
                     </span>
                 </ShimmerButton>
             </div>
             <div className='relative rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-1 before:[filter:blur(180px)] before:[background-image:linear-gradient(to_bottom,#39ff14,#39ff14,transparent_40%)] before:animate-image-glow'>
                 <ShineBorder
-                className="relative flex h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full sm:w-4/6 md:w-[1000px] flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
+                className="relative flex md:h-[350px] md:w-[1000px] flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
                 color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
                 >    
                 <img
