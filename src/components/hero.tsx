@@ -29,16 +29,18 @@ const Home: FC = () => {
             </h1>
             <p className='suse-regular text-white text-center pt-5 md:w-2/6'>I'm passionate about coding that pushes the limits—building high-performance websites, automating API integrations, creating custom dev tools, and designing stunning user experiences that make you say Wow!.</p>
             
-            <div className="share-regular z-10 flex min-h-[8rem] items-center justify-center">
-                <ShimmerButton className="shadow-2xl">
-                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                        Download CV
-                    </span>
-                </ShimmerButton>
+            <div className="share-regular z-10 flex min-h-[8rem] items-center justify-center">                
+                <a href='/RobinCV.pdf' target='_blank'>
+                    <ShimmerButton className="shadow-2xl">
+                            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                Download CV
+                            </span>
+                    </ShimmerButton>
+                </a>
             </div>
             <div className='relative rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-1 before:[filter:blur(180px)] before:[background-image:linear-gradient(to_bottom,#39ff14,#39ff14,transparent_40%)] before:animate-image-glow'>
                 <ShineBorder
-                className="relative flex md:h-[350px] md:w-[1000px] flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
+                className="relative flex md:h-[200px] xl:h-[300px] md:w-[1000px] flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
                 color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
                 >    
                 <img
