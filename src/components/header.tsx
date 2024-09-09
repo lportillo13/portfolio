@@ -50,7 +50,7 @@ const Header: FC = () => {
 
         {/* Dropdown Menu (mobile) */}
         <ul
-          className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 flex flex-col items-center justify-end space-y-8 transition-all duration-300 ${
+          className={`fixed top-0 left-0 w-full h-screen bg-black bg-opacity-80 flex flex-col items-center justify-center md:justify-end space-y-8 transition-all duration-300 ${
             isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           } md:relative md:opacity-100 md:visible md:flex-row md:flex md:space-y-0 md:space-x-4 md:h-auto md:bg-transparent`}
         >
