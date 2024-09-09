@@ -42,7 +42,7 @@ const Header: FC = () => {
         </div>
 
         {/* Hamburger Icon for mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden z-10">
           <button onClick={toggleMenu}>
             <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="lg" />
           </button>
