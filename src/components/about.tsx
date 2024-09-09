@@ -48,8 +48,8 @@ const About: FC = () => {
             color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
             >  
               <p className="whitespace-pre-wrap text-4xl font-medium tracking-tighter text-white text-center py-6 numbers-track">
-                <NumberTicker value={3000} />+                  
-                <p className="text-2xl">Commits</p>
+                <NumberTicker value={500} />+                  
+                <p className="text-2xl">Issues Fixed</p>
               </p>  
             </ShineBorder>   
           </div>               

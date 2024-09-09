@@ -15,7 +15,7 @@ const Home: FC = () => {
   return (
     
     <section id="home" className="h-screen flex items-center justify-center fade-in">
-        <div className="relative flex w-full flex-col h-full md:h-screen p-10 md:p-0 items-center justify-end overflow-hidden bg-background md:shadow-xl">
+        <div className="relative flex w-full flex-col h-full md:h-screen p-10 md:p-0 items-center justify-center md:justify-end overflow-hidden bg-background md:shadow-xl">
             <Particles
                 className="absolute inset-0"
                 quantity={500}
@@ -40,7 +40,7 @@ const Home: FC = () => {
             </div>
             <div className='relative rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-1 before:[filter:blur(180px)] before:[background-image:linear-gradient(to_bottom,#39ff14,#39ff14,transparent_40%)] before:animate-image-glow'>
                 <ShineBorder
-                className="relative flex md:h-[200px] xl:h-[300px] md:w-[1000px] flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
+                className="absolute bottom-0 md:relative flex md:h-[200px] xl:h-[300px] md:w-[1000px] flex-col items-center p-0 justify-center overflow-hidden bg-background md:shadow-xl "
                 color={["#39ff14", "#FE8FB5", "#FFBE7B"]}
                 >    
                 <img

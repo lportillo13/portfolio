@@ -23,7 +23,6 @@ const Card: FC<CardProps> = ({ title, description, tags, image, link }) => {
       </div>
       <div className="p-4">
         <h2 className="text-xl text-white mb-2">{title}</h2>
-        <p className="text-gray-400">{description}</p>
         <div className="flex flex-wrap mt-4">
           {tags.map((tag, index) => (
             <div className='gradient-border' key={index}>
