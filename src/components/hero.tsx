@@ -24,12 +24,12 @@ const Home: FC = () => {
                 refresh
             />
             <p className='suse-regular text-white text-center pb-5 uppercase md:w-2/6'>Welcome to my site</p>
-            <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-br dark:from-white from-white from-30% dark:to-white/40 to-black/40 bg-clip-text text-center text-4xl md:text-7xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+            <h1 className="pointer-events-none whitespace-pre-wrap bg-gradient-to-br dark:from-white from-white from-30% dark:to-white/40 to-black/40 bg-clip-text text-center text-5xl md:text-7xl h-[200px] md:h-[150px] font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
             I'm Leonardo Portillo, <br></br>a Front-End Developer.
             </h1>
             <p className='suse-regular text-white text-center pt-5 md:w-2/6'>I'm passionate about coding that pushes the limits—building high-performance websites, automating API integrations, creating custom dev tools, and designing stunning user experiences that make you say Wow!.</p>
             
-            <div className="share-regular z-10 flex min-h-[8rem] items-center justify-center">                
+            <div className="share-regular z-10 flex mb-[6rem] md:mb-[1rem] mt-[1rem] items-center justify-center">                
                 <a href='/RobinCV.pdf' target='_blank'>
                     <ShimmerButton className="shadow-2xl">
                             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
